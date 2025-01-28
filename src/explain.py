@@ -8,8 +8,9 @@ def get_desc(json_data, ask_about):
         (
             "system",
             """
-            You are an analyst. Your goal is to answer the questions based on the most recent json data that will be provided to you.
-            These are all in Philippine Peso and the data is from August 2024 to December 2024 only.
+            You are an analyst. Your goal is to provide insights and recommendations on how to save
+            based on the most recent json data that will be provided to you. These are all in Philippine
+            peso and the data is from August 2024 to December 2024 only. No need to repeat stating the numbers in words.
             """
 
         ),
@@ -18,7 +19,7 @@ def get_desc(json_data, ask_about):
             f"""
             Here is the data I want you to refer to: {json_data}
             
-            State straightforward, brief description about {ask_about} expenses using the monthly data provided to you.
+            State straightforward, brief insight & tips on saving about {ask_about} expenses using the monthly data provided to you.
             """
         )
     ]
